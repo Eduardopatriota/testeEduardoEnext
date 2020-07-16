@@ -46,8 +46,8 @@ window.onload = updateCor;
 function updateCor() {
   var selectCor = document.getElementById('cores-fonte');
   var valorCor = selectCor.options[selectCor.selectedIndex].value;
-
-
+  
+  
   if (valorCor === "1") {
     document.getElementById("dog-name").style.color = "black";
   }
@@ -63,7 +63,7 @@ function updateCor() {
   else {
     document.getElementById("dog-name").style.color = "red";
   }
-
+  
   let button = document.querySelector('button');
   button.onclick = function () {
     localStorage.setItem('corStore', valorCor);
@@ -73,6 +73,7 @@ function updateCor() {
 
 //localstorage FONTE
 document.getElementById("tipo-fonte").value = localStorage.fonteStore;
+//window.onload = updateFonte;
 
 //troca do tipo de fonte
 function updateFonte() {
@@ -104,7 +105,7 @@ function updateFonte() {
 }
 
 
-    //updateCor ()
+updateFonte ()
 
 
 
