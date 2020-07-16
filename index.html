@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Eduardo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"
+    href="https://media-exp1.licdn.com/dms/image/C4D0BAQEa56v3qyioIQ/company-logo_200_200/0?e=2159024400&v=beta&t=B-mVkRl61twTcoUkKYZo9vAn5mCr4ZX8GAiqWq8h1fc"
+    type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Modak&family=Oswald:wght@700&family=Ranchers&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+  <h1 class="header">Teste Eduardo Patriota</h1>
+
+  <select id="cores-fonte" onchange="updateCor()">
+    <option>Selecione a cor da fonte</option>
+    <option value=1>Preto</option>
+    <option value=2>Verde</option>
+    <option value=3>Amarelo</option>
+    <option value=4>Azul</option>
+    <option value=5>Vermelho</option>
+  </select>
+
+  <br>
+
+  <select id="tipo-fonte" onchange="updateFonte()">
+    <option>Selecione o tipo de fonte</option>
+    <option value=6>Dancing Script</option>
+    <option value=7>Modak</option>
+    <option value=8>Oswald</option>
+    <option value=9>Ranchers</option>
+    <option value=10>Rowdies</option>
+  </select>
+  
+  <br>
+  
+  <select class="lista-racas">
+    <option>Selecione a raça do doginho</option>
+  </select>
+  
+  
+  <div class="img-container">
+    
+    <div id="dog-name">Nome do doginho</div>
+    
+    <img src="http://placecorgi.com/260/180" class="dog-img" alt="imagem do dog selecionado" />
+    
+  </div>
+  
+  
+  <script src="app.js"></script>
+</body>
+
+</html>
