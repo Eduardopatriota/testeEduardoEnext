@@ -9,49 +9,58 @@
   <link rel="shortcut icon"
     href="https://media-exp1.licdn.com/dms/image/C4D0BAQEa56v3qyioIQ/company-logo_200_200/0?e=2159024400&v=beta&t=B-mVkRl61twTcoUkKYZo9vAn5mCr4ZX8GAiqWq8h1fc"
     type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Modak&family=Oswald:wght@700&family=Ranchers&family=Rowdies:wght@700&display=swap" rel="stylesheet">
-    
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Modak&family=Oswald:wght@700&family=Ranchers&family=Rowdies:wght@700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
   <h1 class="header">Teste Eduardo Patriota</h1>
 
-  <select id="cores-fonte" onchange="updateCor()">
-    <option>Selecione a cor da fonte</option>
-    <option value=1>Preto</option>
-    <option value=2>Verde</option>
-    <option value=3>Amarelo</option>
-    <option value=4>Azul</option>
-    <option value=5>Vermelho</option>
-  </select>
+  <div id="nome-fonte">
+    <p>&nbsp Selecione a cor fonte &nbsp</p>
+    <select id="cores-fonte" onchange="updateCor()">
+      <option>Selecione a cor da fonte </option>
+      <option value=1>Preto</option>
+      <option value=2>Verde</option>
+      <option value=3>Amarelo</option>
+      <option value=4>Azul</option>
+      <option value=5>Vermelho</option>
+    </select>
 
-  <br>
+    <button>Salvar informações da cor</button>
+  </div>
 
-  <select id="tipo-fonte" onchange="updateFonte()">
-    <option>Selecione o tipo de fonte</option>
-    <option value=6>Dancing Script</option>
-    <option value=7>Modak</option>
-    <option value=8>Oswald</option>
-    <option value=9>Ranchers</option>
-    <option value=10>Rowdies</option>
-  </select>
-  
-  <br>
-  
+  <div id="nome-fonte">
+    <p>Selecione o tipo da fonte &nbsp </p>
+    <select id="tipo-fonte" onchange="updateFonte()">
+      <option>Selecione o tipo de fonte</option>
+      <option value=6>Dancing Script</option>
+      <option value=7>Modak</option>
+      <option value=8>Oswald</option>
+      <option value=9>Ranchers</option>
+      <option value=10>Rowdies</option>
+    </select>
+
+    <button class="button2">Salvar informações da fonte </button>
+  </div>
+
   <select class="lista-racas">
+    <br>
     <option>Selecione a raça do doginho</option>
   </select>
-  
-  
+
+
   <div class="img-container">
-    
-    <div id="dog-name">Nome do doginho</div>
-    
-    <img src="http://placecorgi.com/260/180" class="dog-img" alt="imagem do dog selecionado" />
-    
+
+    <div id="dog-name">Selecione a raça do doginho acima</div>
+
+    <img src="/capa.jpg" class="dog-img" alt="imagem do dog selecionado" />
+
   </div>
-  
-  
+
+
   <script src="app.js"></script>
 </body>
 

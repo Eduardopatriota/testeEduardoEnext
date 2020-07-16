@@ -37,6 +37,7 @@ const getDoggo = url => {
     });
 };
 
+
 //localstorage COR
 document.getElementById('cores-fonte').value = localStorage.corStore;
 window.onload = updateCor;
@@ -62,13 +63,16 @@ function updateCor() {
   else {
     document.getElementById("dog-name").style.color = "red";
   }
-  localStorage.setItem('corStore', valorCor);
+
+  let button = document.querySelector('button');
+  button.onclick = function () {
+    localStorage.setItem('corStore', valorCor);
+    alert("dados salvos da cor")
+  }
 }
 
 //localstorage FONTE
 document.getElementById("tipo-fonte").value = localStorage.fonteStore;
-window.onload = updateFonte;
-
 
 //troca do tipo de fonte
 function updateFonte() {
@@ -90,16 +94,17 @@ function updateFonte() {
   else {
     document.getElementById("dog-name").style.fontFamily = 'Rowdies';
   }
-  localStorage.setItem('fonteStore', valorFonte);
+  //salvar dado pelo botão
+  let button2 = document.querySelector('.button2');
+  button2.onclick = function () {
+    localStorage.setItem('fonteStore', valorFonte);
+    alert("dados salvos da fonte")
+
+  }
 }
 
 
-
-
-
-
-
-//updateCor ()
+    //updateCor ()
 
 
 
